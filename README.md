@@ -1,4 +1,4 @@
 ### hackerank
 
-My solutions to problems in hackerrank, in various languages (most likely Rust, Python and Java)
+My solutions to problems on HackerRank, in various languages (most likely Rust, Python and Java)
 
