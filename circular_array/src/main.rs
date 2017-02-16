@@ -14,9 +14,6 @@ fn main() {
     let mut s = get_input_line();
     let line = tokenize(&mut s);
 
-    let s = "14";
-    let x = s as i32;
-    
     let n = line[0].parse::<usize>().unwrap();
     let k = line[1].parse::<usize>().unwrap();
     let q = line[2].parse::<usize>().unwrap();
@@ -34,9 +31,20 @@ fn main() {
         i += 1;
     }
 
+    /*
+    // we could also perform the rotations 
+    // instead of modular arithmetic like so
+
+    for _ in 0..k {
+        let num = nums.remove(n-1);
+        nums.insert(0, num);
+    }
+    */
+
     // print out the numbers
     for _ in 0..q {
         let query = get_input_line().trim().parse::<usize>().unwrap();
+
         // use modular arithmetic to figure out index after rotations
         println!("{}", nums[(query + n - k) % n]);
     }
