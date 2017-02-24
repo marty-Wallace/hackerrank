@@ -1,6 +1,0 @@
-[package]
-name = "simple_array_sum"
-version = "0.1.0"
-authors = ["Martin Wallace <martin.v.wallace@ieee.org>"]
-
-[dependencies]
